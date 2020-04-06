@@ -1,0 +1,169 @@
+<style>
+
+.card-box{
+    height:270px;
+}
+.card-container{
+    margin-top:0 !important;
+    padding-right: 174px !important;
+    box-sizing: border-box;
+}
+.right-side{
+    width:150px;
+    background-color: #61aced;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+.top-right{
+    background: rgba(0,0,0,0.5);
+    width: 128px;
+    margin: -7px;
+    border-radius: 0 6px 0 0;
+    line-height: 2.5rem;
+    padding-right: 36px;
+}
+.card-img img{
+    border-radius: 100%;
+    width: 80px;
+    margin: 18px 0 4px 0;
+    border: dashed 2px #cecece;
+    padding: 4px;
+}
+
+.ConfirmBox{
+    position: absolute;
+    right: 0;
+    width: 35px;
+    border-left: solid 1px silver;
+    height: 35px;
+}
+.ConfirmBox span{
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    background: white;
+    border-radius: 100%;
+    margin: 5px;
+}
+.ConfirmBox span i{
+    margin: 4px 5px;
+    position: absolute;
+    font-size: 1.2rem;
+}
+.ConfirmBox span i.fa-ban{
+    color: red;
+}
+.ConfirmBox span i.fa-check{
+    color: green;
+    margin: 4px 4px !important;
+}
+
+.left-top{
+    height: 70px;
+    margin-top: 6px;
+}
+.left-bottom{
+    height: 160px;
+}
+.left-bottom span, .left-top span{
+    position: absolute;
+    color: grey;
+    font-size: 0.8rem;
+}
+.left-bottom p, .left-top p{
+    padding-top: 25px;
+    font-size: 0.9rem;
+}
+.left-bottom p{
+    text-align: justify;
+    height: 72%;
+}
+.left-footer span{
+    user-select: none;
+    cursor: pointer;
+    padding: 3px 9px;
+    box-shadow: 0 2px 2px 0px silver;
+    border-radius: 6px;
+    background: #263498;
+    color: white;
+}
+.right-footer, .right-footer span, .right-footer span i{
+    user-select: none;
+}
+.right-footer span i{
+    cursor: pointer;
+    color:#263498;
+}
+.right-footer span i:hover{
+    color:#ffffff;
+}
+
+</style>
+
+
+<div class="flex w-full md:w-1/2 xl:w-1/4 overflow-hidden relative card-box" >
+
+  <div class="flex shadow bg-white rounded-lg p-2 m-2 border border-solid border-gray-300 text-base text-white text-right relative w-full card-container" >
+
+      <div class="absolute shadow p-2 right-0 top-0 bottom-0 rounded-lg flex flex-col text-center right-side" >
+        <div class="w-full flex flex-col text-center">
+          <span class="w-full text-center top-right">
+            <span class="ConfirmBox">
+              <span>
+                <i class="fa fa-check"></i>
+              </span>
+            </span>
+            کمیسیون اصل 90
+          </span>
+          <div class="w-full text-center card-img">
+            <img src="https://randomuser.me/api/portraits/men/22.jpg" >
+          </div>
+        </div>
+        <div class="w-full flex flex-col text-center">
+          <span class="w-full text-center">
+            علی صیاد شیرازی
+          </span>
+          <span class="w-full text-center" style="line-height: 2.5rem;">
+            038-------
+          </span>
+          <span class="w-full text-center">
+            0912-------
+          </span>
+        </div>
+        <div class="w-full right-footer flex flex-row text-center" style="margin-top:8px">
+          <span class="flex-1 text-center">
+            <i class="fa fa-user-circle"></i>
+          </span>
+          <span class="flex-1 text-center">
+            <i class="fa fa-file"></i>
+          </span>
+          <span class="flex-1 text-center">
+            <i class="fa fa-info"></i>
+          </span>
+        </div>
+
+      </div>
+      
+      <div class="w-full text-black left-side">
+        <div class="w-full left-top" >
+          <span> عنوان 1:</span>
+          <p>
+            یه چیزی
+          </p>
+        </div>  
+        <div class="w-full left-bottom" >
+          <span> توضیحات کاربر:</span>
+          <p>
+            .توضیحاتی مربوط به داستان این کاربر
+          </p>
+        </div>
+        <div class="w-full left-footer text-center" style="margin-top: -18px;">
+          <span>
+            <i class="fa fa-check"></i>
+            ثبت وضعیت
+          </span>
+        </div>
+      </div>
+
+  </div>
+</div>
